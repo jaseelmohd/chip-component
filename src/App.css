@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -36,3 +41,22 @@
     transform: rotate(360deg);
   }
 }
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+}
+
+.remove-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+

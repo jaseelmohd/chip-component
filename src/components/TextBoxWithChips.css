@@ -1,0 +1,124 @@
+.text-box-with-chips {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+}
+
+.chip-input-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  width: 50vw;
+  border-bottom: 2px solid black;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.chip-input-container:focus-within {
+  border-color: #2196f3;
+}
+
+.chip-input {
+  max-width: 200px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin: 0;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 2px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.chip:hover {
+  border: 1px solid;
+}
+
+.chip.highlighted {
+  border: 1px solid;
+}
+
+.chip-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.chip-label {
+  margin-left: 5px;
+  width: fit-content;
+}
+
+.remove-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.auto-complete-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.auto-complete-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.auto-complete-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.auto-complete-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.list-item-name {
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+
+.list-item-email {
+  font-weight: 400;
+  color: grey;
+  text-align: left;
+  width: 100%;
+}
+
+.highlight {
+  color: grey;
+}
+
+.avatar-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
