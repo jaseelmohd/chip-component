@@ -95,17 +95,6 @@ const TextBoxWithChips = ({ data }) => {
     return item.name; // If no match, return the original item
   };
 
-  const handleChipClick = (chipIndex) => {
-    // Remove the clicked chip from the chips list
-    const removedChip = chips[chipIndex];
-    setChips(chips.filter((_, index) => index !== chipIndex));
-    setHighlightedChipIndex(-1); // Reset highlighted chip index
-    inputRef.current.focus();
-
-    // Add the removed chip back to the autoCompleteItems
-    setAutoCompleteItems([...autoCompleteItems, removedChip]);
-  };
-
   return (
     <div className="text-box-with-chips">
       <div className="chip-input-container">
